@@ -22,7 +22,7 @@ The dataset is arranged such that each class has a directory with the correspond
 ## Fine-tuning Pre-trained MAE and ViT for Classification
 ### MAE
 
-Get our pre-trained checkpoints from [here](https://github.com/fairinternal/mae/#pre-trained-checkpoints).
+Get ImageNet pre-trained checkpoints from [here](https://github.com/fairinternal/mae/#pre-trained-checkpoints).
 
 ```
 python main_finetune.py \
