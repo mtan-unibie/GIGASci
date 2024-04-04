@@ -122,9 +122,12 @@ def evaluate(data_set, data_loader, model, device, args):
         # compute output
         with torch.cuda.amp.autocast():
             output = model(images)
+            predicted_probabilities = torch.softmax(output, dim=1)
 
             _, preds = torch.max(output, 1)
             y_pred = torch.cat([y_pred, preds.view(-1).cpu()])
+            y_Prob = torch.cat([y_Prob, predicted_probabilities.cpu()])
+          
 
             loss = criterion(output, target)
 
