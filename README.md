@@ -10,12 +10,12 @@ The dataset is arranged such that each class has a directory with the correspond
 
 ```bash
 ├── dataset
-│   ├── train_data
+│   ├── train
 │   │   ├── class1
 │   │   ├── class2
 ...
 │   │   ├── classN
-│   ├── test_data
+│   ├── val
 │   │   ├── class1
 │   │   ├── class2
 ...
