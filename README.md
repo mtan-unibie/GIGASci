@@ -1,6 +1,9 @@
 # MAE-ViT-on-diatom-classification
 
+* This repo is a modification on the [DeiT repo](https://github.com/facebookresearch/deit). Installation and preparation follow that repo.
 
+* This repo is based on [`timm==0.3.2`](https://github.com/rwightman/pytorch-image-models), for which a [fix](https://github.com/rwightman/pytorch-image-models/issues/420#issuecomment-776459842) is needed to work with PyTorch 1.8.1+.
+  
 ## Dataset
 
 The dataset is arranged such that each class has a directory with the corresponding images placed in them. An example directory structure is shown below.
@@ -52,3 +55,6 @@ python ViT-classification.py \
     --log_dir ${OUTPUT_DIR}
   
 ```
+### License
+
+This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
