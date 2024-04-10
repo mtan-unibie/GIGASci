@@ -23,9 +23,8 @@ The dataset is arranged such that each class has a directory with the correspond
 │   │   ├── classN
 
 ```
-## Fine-tuning Pre-trained MAE and ViT for Classification
+## Fine-tuning
 ### MAE
-
 ```
 python main_finetune.py \
     --data_path ${DATA_DIR} \
@@ -39,9 +38,7 @@ python main_finetune.py \
     --log_dir ${OUTPUT_DIR} 
   
 ```
-
 ### ViT
-
 ```
 python ViT-classification.py \
     --data_path ${DATA_DIR} \
@@ -54,7 +51,7 @@ python ViT-classification.py \
     --log_dir ${OUTPUT_DIR}
   
 ```
-## Evaluation checkpoints of MAE and ViT for Classification
+## Evaluation
 ### MAE
 
 ```
@@ -66,9 +63,7 @@ python main_finetune.py \
     --batch_size 16 \
     --model vit_large_patch16 
 ```
-
 ### ViT
-
 ```
 python ViT-classification.py \
     --eval \
@@ -79,6 +74,5 @@ python ViT-classification.py \
     --model vit_large_patch16_224 
 ```
 ### License
-
 This project is under the MIT license. See [LICENSE](LICENSE) for details.
 
