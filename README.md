@@ -36,8 +36,8 @@ python main_finetune.py \
     --epochs 100 \
     --device cuda \
     --output_dir ${OUTPUT_DIR} \
-    --log_dir ${OUTPUT_DIR} 
-  
+    --log_dir ${OUTPUT_DIR} \
+    --device cuda
 ```
 ### ViT
 ```
@@ -49,8 +49,8 @@ python ViT-classification.py \
     --epochs 100 \
     --device cuda \
     --output_dir ${OUTPUT_DIR} \
-    --log_dir ${OUTPUT_DIR}
-  
+    --log_dir ${OUTPUT_DIR} \
+    --device cuda
 ```
 ## Evaluation
 * Run evaluation using fine-tuned checkpoints.
@@ -63,7 +63,8 @@ python main_finetune.py \
     --data_path ${DATA_DIR} \
     --nb_classes 144 \
     --batch_size 16 \
-    --model vit_large_patch16 
+    --model vit_large_patch16 \
+    --device cuda 
 ```
 ### ViT
 ```
@@ -73,7 +74,8 @@ python ViT-classification.py \
     --data_path ${DATA_DIR} \ 
     --nb_classes 144 \
     --batch_size 16 \
-    --model vit_large_patch16_224 
+    --model vit_large_patch16_224 \
+    --device cuda 
 ```
 ### License
 This project is under the MIT license. See [LICENSE](LICENSE) for details.
