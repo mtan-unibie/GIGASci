@@ -24,6 +24,7 @@ The dataset is arranged such that each class has a directory with the correspond
 
 ```
 ## Fine-tuning
+* Fine-tuning ImageNet pre-trained [model](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_large.pth).
 ### MAE
 ```
 python main_finetune.py \
@@ -52,6 +53,7 @@ python ViT-classification.py \
   
 ```
 ## Evaluation
+* Run evaluation using fine-tuned checkpoints.
 ### MAE
 
 ```
