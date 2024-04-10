@@ -3,7 +3,7 @@
 * This repo is a modification on the [MAE repo](https://github.com/facebookresearch/mae). Installation and preparation follow that repo.
 
 ## Containerization
-* Find the containerized notebook here: [demo](demo).
+* Find the containerized notebook here: [demo](demo.ipynb).
 
 ## Dataset
 
