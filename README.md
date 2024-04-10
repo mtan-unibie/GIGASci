@@ -26,15 +26,14 @@ The dataset is arranged such that each class has a directory with the correspond
 ```
 python main_finetune.py \
     --data_path ${DATA_DIR} \
-    --nb_classes 144
-    --nodes 4 \
+    --nb_classes 144 \
     --batch_size 16 \
     --model vit_large_patch16 \
     --finetune mae_pretrain_vit_large.pth \
     --epochs 100 \
     --device cuda \
-    --output_dir ${OUTPUT_DIR}
-    --log_dir ${OUTPUT_DIR}
+    --output_dir ${OUTPUT_DIR} \
+    --log_dir ${OUTPUT_DIR} 
   
 ```
 
@@ -43,15 +42,38 @@ python main_finetune.py \
 ```
 python ViT-classification.py \
     --data_path ${DATA_DIR} \
-    --nb_classes 144
-    --nodes 4 \
+    --nb_classes 144 \
     --batch_size 16 \
     --model vit_large_patch16_224 \
     --epochs 100 \
     --device cuda \
-    --output_dir ${OUTPUT_DIR}
+    --output_dir ${OUTPUT_DIR} \
     --log_dir ${OUTPUT_DIR}
   
+```
+## Evaluation checkpoints of MAE and ViT for Classification
+### MAE
+
+```
+python main_finetune.py \
+    --eval \
+    --resume ${CHECKPOINTS_DIR} \
+    --data_path ${DATA_DIR} \
+    --nb_classes 144 \
+    --batch_size 16 \
+    --model vit_large_patch16 
+```
+
+### ViT
+
+```
+python ViT-classification.py \
+    --eval \
+    --resume ${CHECKPOINTS_DIR} \
+    --data_path ${DATA_DIR} \ 
+    --nb_classes 144 \
+    --batch_size 16 \
+    --model vit_large_patch16_224 
 ```
 ### License
 
