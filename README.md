@@ -1,9 +1,9 @@
 # MAE-ViT-on-diatom-classification
 
-* This repo is a modification on the [MAE repo](https://github.com/facebookresearch/mae). Installation and preparation follow that repo.
-
+* This repo is a modification on the [MAE repo](https://github.com/facebookresearch/mae).
+* 
 ## Containerization
-* Find the containerized notebook here: [demo](demo.ipynb).
+* Find the containerized notebook including installation and preparation details here: [demo](demo.ipynb).
 
 ## Dataset
 
