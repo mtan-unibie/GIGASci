@@ -25,7 +25,7 @@ The dataset is arranged such that each class has a directory with the correspond
 ```
 ## Fine-tuning
 * Fine-tuning ImageNet pre-trained [model](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_large.pth) provided by MAE repo.
-### MAE
+#### MAE
 ```
 python main_finetune.py \
     --data_path ${DATA_DIR} \
@@ -39,7 +39,7 @@ python main_finetune.py \
     --log_dir ${OUTPUT_DIR} \
     --device cuda
 ```
-### ViT
+#### ViT
 ```
 python ViT-classification.py \
     --data_path ${DATA_DIR} \
@@ -54,7 +54,7 @@ python ViT-classification.py \
 ```
 ## Evaluation
 * Run evaluation using fine-tuned checkpoints.
-### MAE
+#### MAE
 
 ```
 python main_finetune.py \
@@ -66,7 +66,7 @@ python main_finetune.py \
     --model vit_large_patch16 \
     --device cuda 
 ```
-### ViT
+#### ViT
 ```
 python ViT-classification.py \
     --eval \
